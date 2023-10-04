@@ -1,0 +1,170 @@
+.container {
+    border: 1px solid black;
+    display: table;
+    border-spacing: 20px;
+    border-radius: 15px;
+}
+
+/*div {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    display: table-cell;
+}*/
+
+.riga {
+    display: table-row;
+}
+.cella {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    text-align:center;
+    display: table-cell;
+    padding: 10px;
+}
+
+#comandi {
+    display: flexbox;
+    border: 1px solid black;
+    /* padding: 10px; */
+    margin: 10px;
+    width: 20%;
+    border-radius: 15px;
+    /* float: left; */
+    float: right;
+    position: absolute;
+    z-index: 1;
+}
+
+#comandi>button {
+    padding: 5px;
+    margin: 5px;
+    background: transparent;
+    border-radius: 7px;
+    font-weight: 300;
+    font-family: sans-serif;
+    font-size: large;
+    padding: 12px;
+}
+
+/* #menu {
+    border: 1px solid black;
+    width: 35%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#menu>button {
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+} */
+
+#menu>p {
+    font-family: 'Dongle', sans-serif;
+    font-size: 32px;
+    margin: 0px;
+    display: inline;
+}
+
+#sopra {
+    color: red;
+    border: 1px solid red;
+}
+#sopra:hover {
+    color: white;
+    background:red;
+}
+#sinistra {
+    color: rgb(68, 209, 68);
+    border: 1px solid rgb(68, 209, 68);
+}
+#sinistra:hover {
+    color: white;
+    background: rgb(68, 209, 68);
+}
+#destra {
+    color: rgb(255, 196, 0);
+    border: 1px solid rgb(255, 196, 0);
+}
+#destra:hover {
+    color: white;
+    background: rgb(255, 196, 0);
+}
+#sotto {
+    color: blue;
+    border: 1px solid blue;
+}
+#sotto:hover {
+    color: white;
+    background: blue;
+}
+
+#avanti {
+    color: rgb(183, 0, 255);
+    border: 1px solid rgb(183, 0, 255);
+}
+
+#avanti:hover {
+    color: white;
+    background: rgb(183, 0, 255);
+}
+
+#avvio {
+    background: transparent;
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    font-size: large;
+    
+}
+#avvio:hover {
+    /* background-color: rgb(0, 109, 211); */
+    color: rgb(240, 209, 209);
+}
+#ricomincia {
+    background: transparent;
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    font-size: large;
+}
+#ricomincia:hover {
+    /* background-color: rgb(85, 85, 85); */
+    color: rgb(240, 209, 209);
+}
+
+nav {
+    margin: 12px;
+    background-image: linear-gradient(
+        to right,
+        #ff0303, #ff5000, #ff7600, #ff9500, #ffb100
+    );
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#dati>p {
+    display: inline;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding-right: 10px;
+}
+
+nav>button {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#coinPresi {
+    font-family: sans-serif;
+    /* color: rgb(71, 164, 250); */
+}
+
+canvas {
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 0;
+}

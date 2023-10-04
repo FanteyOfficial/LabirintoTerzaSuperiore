@@ -1,0 +1,100 @@
+<!DOCTYPE html5>
+<!-- ====================================================================================== -->
+<!-- Se non carica lettere accentate e il personaggio su chrome, eseguire su Microsoft Edge -->
+<!-- ====================================================================================== -->
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Mochiy+Pop+P+One&family=Noto+Sans:ital,wght@1,700&family=Oswald:wght@700&family=Rubik+Beastly&family=Rubik:wght@300&family=Syne+Mono&display=swap" rel="stylesheet" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Dosis:wght@200;600;800&family=Mochiy+Pop+P+One&family=Noto+Sans:ital,wght@1,700&family=Oswald:wght@700&family=PT+Sans+Narrow&family=Rubik+Beastly&family=Rubik:wght@300&family=Syne+Mono&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body onload="onStart()">
+        <nav id="navigazione">
+            <div id="menu">
+                <button onclick="start(40)" id="avvio">Inizia il gioco</button>
+                <button onclick="restart(40)" id="ricomincia">Restart</button>
+            </div>
+            <div id="dati">
+                <p id="posCorrente"></p>
+                <p id="coin"></p>
+                <p id="visuale"></p>
+                <p id="coinPresi"></p>
+                <p id="vittoria"></p>
+            </div>
+        </nav>
+        <center>
+          <div id="comandi">
+                <button onclick="spostaSopra()" id="sopra">N</button>
+                <br>
+                <button onclick="spostaASinistra()" id="sinistra">O</button>
+                <button id="avanti">Vai avanti</button>
+                <button onclick="spostaADestra()" id="destra">E</button>
+                <br>
+                <button onclick="spostaGiu()" id="sotto">S</button>
+            </div>
+            <canvas id="tela"></canvas>
+            <div class="container">
+                <!--<p>I will display &#129429;</p>-->
+                <div class="riga">
+                    <div class="cella" id="st1"></div>
+                    <div class="cella" id="st2" ></div>
+                    <div class="cella" id="st3"></div>
+                    <div class="cella" id="st4"></div>
+                    <div class="cella" id="st5"></div>
+                    <div class="cella" id="st6"></div>
+                    <div class="cella" id="st7"></div>
+                    <div class="cella" id="st8"></div>
+                    <div class="cella" id="st9"></div>
+                    <div class="cella" id="st10"></div>
+                </div>
+
+                <div class="riga">
+                    <div class="cella" id="st11"></div>
+                    <div class="cella" id="st12"></div>
+                    <div class="cella" id="st13"></div>
+                    <div class="cella" id="st14"></div>
+                    <div class="cella" id="st15"></div>
+                    <div class="cella" id="st16"></div>
+                    <div class="cella" id="st17"></div>
+                    <div class="cella" id="st18"></div>
+                    <div class="cella" id="st19"></div>
+                    <div class="cella" id="st20"></div>
+                </div>
+
+                <div class="riga">
+                    <div class="cella" id="st21"></div>
+                    <div class="cella" id="st22"></div>
+                    <div class="cella" id="st23"></div>
+                    <div class="cella" id="st24"></div>
+                    <div class="cella" id="st25"></div>
+                    <div class="cella" id="st26"></div>
+                    <div class="cella" id="st27"></div>
+                    <div class="cella" id="st28"></div>
+                    <div class="cella" id="st29"></div>
+                    <div class="cella" id="st30"></div>
+                </div>
+
+                <div class="riga">
+                    <div class="cella" id="st31"></div>
+                    <div class="cella" id="st32"></div>
+                    <div class="cella" id="st33"></div>
+                    <div class="cella" id="st34"></div>
+                    <div class="cella" id="st35"></div>
+                    <div class="cella" id="st36"></div>
+                    <div class="cella" id="st37"></div>
+                    <div class="cella" id="st38"></div>
+                    <div class="cella" id="st39"></div>
+                    <div class="cella" id="st40" style="border-right: dotted black;"></div>
+                </div>
+
+            </div>
+        </center>
+    </body>
+</html>
